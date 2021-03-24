@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Link for the fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Link for the css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__overlay"></div>
+    <div class="header__container">
+      <img class="header__open nav-hide" data-toggle="navbar" src="images/icon-hamburger.svg"
+        alt="vector logo of hamburger">
+      <img class="header__logo" src="images/logo.svg" alt="logo of the website">
+    </div>
+    <div class="header__container" id="navbar">
+      <img class="header__close nav-hide" data-toggle="navbar" src="images/icon-close.svg"
+        alt="vector icon of closing button">
+      <a href="#" class="header__link">home</a>
+      <a href="#" class="header__link">shop</a>
+      <a href="#" class="header__link">about</a>
+      <a href="#" class="header__link">contact</a>
+    </div>
+  </header>
+  <div class="top">
+    <input type="radio" name="carousel" id="radio1" checked>
+    <input type="radio" name="carousel" id="radio2">
+    <input type="radio" name="carousel" id="radio3">
+    <label for="radio1"></label>
+    <label for="radio2"></label>
+    <label for="radio3"></label>
+    <div class="carousel product">
+      <div class="carousel__overflow">
+        <div class="carousel__inner slider-carousel">
+          <div class="carousel__slide">
+            <img class="desktop_hero" src="images/desktop-image-hero-1.jpg" alt="picture of product of the website">
+            <img class="mobile_hero" src="images/mobile-image-hero-1.jpg" alt="picture of product of the website">
+          </div>
+          <div class="carousel__slide">
+            <img class="desktop_hero" src="images/desktop-image-hero-2.jpg" alt="picture of product of the website">
+            <img class="mobile_hero" src="images/mobile-image-hero-2.jpg" alt="picture of product of the website">
+          </div>
+          <div class="carousel__slide">
+            <img class="desktop_hero" src="images/desktop-image-hero-3.jpg" alt="picture of product of the website">
+            <img class="mobile_hero" src="images/mobile-image-hero-3.jpg" alt="picture of product of the website">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel descriptions">
+      <div class="carousel__overflow">
+        <div class="carousel__inner">
+
+          <div class="hero carousel__slide slider-1" data-toggle="hide-carousel">
+            <h1 class="hero__title">Discover innovative ways to decorate</h1>
+            <p class="hero__desc">
+              We provide unmatched quality, comfort, and style for property owners across the country.
+              Our experts combine form and function in bringing your vision to life. Create a room in your
+              own style with our collection and make your property a reflection of you and what you love.
+            </p>
+            <a href="#" class="hero__shop">SHOP NOW
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" viewBox="0 0 40 12">
+                  <path id="icon-arrow"
+                    d="M34.05,0l5.481,5.527h.008v.008L40,6l-.461.465v.063h-.062L34.049,12l-.662-.668,4.765-4.8H0v-1H38.206L33.386.667Z" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <div class="hero carousel__slide slider-2" data-toggle="hide-carousel">
+            <h1 class="hero__title">We are available all across the globe</h1>
+            <p class="hero__desc">
+              With stores all over the world, it's easy for you to find furniture for your home or place of business.
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+              store locator. Any questions? Don't hesitate to contact us today.
+            </p>
+            <a href="#" class="hero__shop">SHOP NOW
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" viewBox="0 0 40 12">
+                  <path id="icon-arrow"
+                    d="M34.05,0l5.481,5.527h.008v.008L40,6l-.461.465v.063h-.062L34.049,12l-.662-.668,4.765-4.8H0v-1H38.206L33.386.667Z" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <div class="hero carousel__slide slider-3" data-toggle="hide-carousel">
+            <h1 class="hero__title">Manufactured with the best materials</h1>
+            <p class="hero__desc">
+              Our modern furniture store provide a high level of quality. Our company has invested in advanced
+              technology
+              to ensure that every product is made as perfect and as consistent as possible. With three decades of
+              experience in this industry, we understand what customers want for their home and office.
+            </p>
+            <a href="#" class="hero__shop">SHOP NOW
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="12" viewBox="0 0 40 12">
+                  <path id="icon-arrow"
+                    d="M34.05,0l5.481,5.527h.008v.008L40,6l-.461.465v.063h-.062L34.049,12l-.662-.668,4.765-4.8H0v-1H38.206L33.386.667Z" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow">
+      <div class="arrow__block" data-toggle="left-carousel">
+        <img src="images/icon-angle-left.svg" alt="vector icon of arrow left">
+      </div>
+      <div class="arrow__block" data-toggle="right-carousel">
+        <img src="images/icon-angle-right.svg" alt="vector icon of arrow right">
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <img class="about__image" src="images/image-about-dark.jpg" alt="picture of a furniture in dark">
+    <div class="about__block">
+      <h3 class="about__title">
+        About our furniture
+      </h3>
+      <p class="about__desc">
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+    <img class="about__image" src="images/image-about-light.jpg" alt="picture of a furniture in light">
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://twitter.com/RaymartPamplona">Raymart Pamplona</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
